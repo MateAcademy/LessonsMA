@@ -15,7 +15,7 @@ public class Client implements Serializable {
     public String toString() {
         return "Client{" +
                 "name='" + name + '\'' +
-                ", phoneNamber='" + phoneNamber + '\'' + "версия сериал обьекта: " + serialVersionUID +
+                ", phoneNamber='" + phoneNamber + '\'' + " версия сериализуемого обьекта: " + serialVersionUID +
                 '}';
     }
 

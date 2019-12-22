@@ -11,10 +11,13 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         FileClientDao fileClientDao = new FileClientDao();
-        fileClientDao.save(new Client("Sergei" , "+380501430700"));
-        fileClientDao.save(new Client("Sasha" , "+380508645256"));
+//        fileClientDao.save(new Client("Sergei" , "+380501430700"));
+//        fileClientDao.save(new Client("Sasha" , "+380508645256"));
 
 
-//        fileClientDao.getClient();
+        System.out.println(fileClientDao.get());
+//        System.out.println(fileClientDao.get());
     }
+
+//todo: задача со статик полем у клиента?
 }
