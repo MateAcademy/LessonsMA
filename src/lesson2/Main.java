@@ -15,6 +15,6 @@ public class Main {
         fileClientDao.save(new Client("Sasha" , "+380508645256"));
 
 
-        fileClientDao.getClient();
+//        fileClientDao.getClient();
     }
 }
