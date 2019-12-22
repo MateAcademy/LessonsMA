@@ -1,6 +1,6 @@
 package lesson1.lib;
 
-import lesson1.comtroller.ConsoleHandler;
+import lesson1.controller.ConsoleHandler;
 import lesson1.dao.BetDaoImpl;
 import lesson1.factory.BetDaoFactory;
 
@@ -18,7 +18,7 @@ public class Injector {
         Class<ConsoleHandler> consoleHandlerClass = ConsoleHandler.class;
         Class<BetDaoImpl> betDaoImplClass = BetDaoImpl.class;
 
-        Annotation[] annotations = betDaoImplClass.getAnnotations();
+//        Annotation[] annotations = betDaoImplClass.getAnnotations();
 
         Field[] consoleHandlerFilds = consoleHandlerClass.getDeclaredFields();
         for (Field field : consoleHandlerFilds) {

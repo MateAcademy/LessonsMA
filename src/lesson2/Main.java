@@ -1,23 +1,24 @@
 package lesson2;
 
+import lesson2.dao.ClientDao;
 import lesson2.dao.FileClientDao;
-import lesson2.model.Client;
+import lesson2.dao.InMemoryClientDao;
+import lesson2.di.Component;
+import lesson2.di.Inject;
+import lesson2.di.Injector;
+import lesson2.factory.ClientDaoFactory;
+import lesson2.handler.ConsoleHandler;
 
-import java.io.IOException;
+import java.lang.reflect.Field;
 
 /**
  * @author Sergey Klunniy
  */
 public class Main {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        FileClientDao fileClientDao = new FileClientDao();
-//        fileClientDao.save(new Client("Sergei" , "+380501430700"));
-//        fileClientDao.save(new Client("Sasha" , "+380508645256"));
-
-
-        System.out.println(fileClientDao.get());
-//        System.out.println(fileClientDao.get());
+    public static void main(String[] args) {
+        Injector.injectDependency();
+        ConsoleHandler.handler();
     }
 
-//todo: задача со статик полем у клиента?
+
 }

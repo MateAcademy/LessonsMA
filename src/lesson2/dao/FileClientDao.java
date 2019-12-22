@@ -1,5 +1,6 @@
 package lesson2.dao;
 
+import lesson2.di.Component;
 import lesson2.model.Client;
 
 import java.io.*;
@@ -9,6 +10,7 @@ import java.io.*;
  * Как видишь, мы создали 2 потока — FileOutputStream и ObjectOutputStream. Первый из них умеет
  * записывать данные в файл, а второй — преобразует объекты в байты.
  */
+@Component
 public class FileClientDao implements ClientDao{
 
     public void save(Client client) {

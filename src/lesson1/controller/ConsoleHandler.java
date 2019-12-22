@@ -1,8 +1,6 @@
-package lesson1.comtroller;
+package lesson1.controller;
 
 import lesson1.dao.BetDao;
-import lesson1.dao.BetDaoImpl;
-import lesson1.factory.BetDaoFactory;
 import lesson1.lib.Inject;
 import lesson1.model.Bet;
 

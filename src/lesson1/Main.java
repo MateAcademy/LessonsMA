@@ -1,6 +1,6 @@
 package lesson1;
 
-import lesson1.comtroller.ConsoleHandler;
+import lesson1.controller.ConsoleHandler;
 import lesson1.dao.BetDao;
 import lesson1.dao.BetDaoImpl;
 import lesson1.lib.Injector;
