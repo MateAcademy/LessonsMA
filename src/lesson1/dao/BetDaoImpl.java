@@ -13,7 +13,7 @@ import java.util.List;
  * генерацмия запроса, получение запроса,
  * получение рез, распарсивание рез в данные и возврат
  */
-@Dao
+@Dao  //эта аннотация ставится там где указываю че хочу инжектить
 public class BetDaoImpl implements BetDao {
     @Override
     public void add(Bet bet) {
