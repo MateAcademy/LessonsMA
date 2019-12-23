@@ -23,7 +23,7 @@ public class ClientDaoFactory {
                 return inMemoryDao;
             }
             if (dbName.equals("file") && isInMemoryDao) {
-                return inMemoryDao;
+                return fileDao;
             }
         } catch (IOException e) {
             System.err.println("Нет доступа к файлу application.properties");
