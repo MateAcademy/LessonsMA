@@ -24,8 +24,8 @@ public class Injector {
             if (field.isAnnotationPresent(Inject.class)) {
                 boolean fileDao = fileClientDaoClass.isAnnotationPresent(Component.class);
                 boolean inMemoryDao = inMemoryClientDaoClass.isAnnotationPresent(Component.class);
-                if (fileDao) System.out.println("Работа с файлами разрешена " + fileDao);
-                if (inMemoryDao) System.out.println("Работа с памятью разрешена " + inMemoryDao);
+                if (fileDao) System.out.println("Работа с файлами разрешена ");
+                if (inMemoryDao) System.out.println("Работа с памятью разрешена ");
                 ClientDao clientDao = ClientDaoFactory.getClientDao(fileDao, inMemoryDao);
                 try {
                     field.set(null, clientDao);
