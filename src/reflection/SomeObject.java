@@ -12,6 +12,13 @@ public class SomeObject extends SuperSomeObject {
     private String famaly;
     private int age;
 
+    public SomeObject() {
+    }
+
+    public SomeObject(String name) {
+        this.name = name;
+    }
+
     public SomeObject(String name, String famaly, int age) {
         this.name = name;
         this.famaly = famaly;
