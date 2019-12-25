@@ -11,5 +11,9 @@ public class Main {
         int classModifiers = someObjectClass.getModifiers();
 
         System.out.println(Modifier.isPublic(classModifiers));
+
+        Package myPackage = someObjectClass.getPackage();
+        System.out.println(myPackage);
+
     }
 }
