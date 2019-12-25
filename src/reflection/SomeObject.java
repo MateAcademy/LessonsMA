@@ -1,11 +1,11 @@
 package reflection;
 
+import java.io.Serializable;
+
 /**
  * @author Sergey Klunniy
  */
-class SuperSomeObject {
 
-}
 
 public class SomeObject extends SuperSomeObject {
     public String name;
