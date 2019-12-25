@@ -30,6 +30,21 @@ public class Main {
 
         Field[] fields = someObjectClass.getDeclaredFields();
         System.out.println(Arrays.toString(fields));
+        SomeObject someObject = new SomeObject();
+        try {
+            Field field = someObjectClass.getDeclaredField("age");
+            field.setAccessible(true);
+
+            try {
+                field.set(someObject, 100);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(someObject);
 
     }
 }
