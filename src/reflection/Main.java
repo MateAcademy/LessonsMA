@@ -1,6 +1,7 @@
 package reflection;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
@@ -25,7 +26,10 @@ public class Main {
 //        System.out.println(Arrays.toString(interfaces));
 
         Constructor[] constructors = someObjectClass.getConstructors();
-        System.out.println(Arrays.toString(constructors));
+//        System.out.println(Arrays.toString(constructors));
+
+        Field[] fields = someObjectClass.getDeclaredFields();
+        System.out.println(Arrays.toString(fields));
 
     }
 }
