@@ -15,5 +15,8 @@ public class Main {
         Package myPackage = someObjectClass.getPackage();
         System.out.println(myPackage);
 
+
+        Class superclass = someObjectClass.getSuperclass();
+        System.out.println(superclass);
     }
 }

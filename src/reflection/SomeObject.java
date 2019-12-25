@@ -3,7 +3,11 @@ package reflection;
 /**
  * @author Sergey Klunniy
  */
-public class SomeObject {
+class SuperSomeObject {
+
+}
+
+public class SomeObject extends SuperSomeObject {
     public String name;
     private String famaly;
     private int age;
